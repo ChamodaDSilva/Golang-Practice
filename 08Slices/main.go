@@ -24,7 +24,7 @@ func main() {
 	fmt.Println(fruitlist)
 
 
-	///////////////////////////////
+	////////////make key word eka use kara varible hadann- wenask na///////////////////
 
 	highScores :=make([]int,4)
 	highScores[0]=234
@@ -39,5 +39,18 @@ func main() {
 	fmt.Println(highScores)
 
 	fmt.Println(sort.IntsAreSorted(highScores))
+
+
+	//how to remove a value based on index from slice
+
+	var courses =[]string{"reactjs","javscript","go","java"}
+
+	fmt.Println(courses)
+	var removeingIndex int =2
+	courses=append(courses[:removeingIndex],courses[removeingIndex+1:]...)
+
+	fmt.Println(courses)
+
+
 
 }
