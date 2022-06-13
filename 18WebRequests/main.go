@@ -1,4 +1,4 @@
-/* this code gives the htm code of the given website */
+/* this code gives the html code of the given website */
 package main
 
 import (
@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-const url = "https://www.cricbuzz.com/" //const kiyanne java final kiyana eka, change krnn be
+const url = "https://learning.iit.ac.lk/my/" //const kiyanne java final kiyana eka, change krnn be
 
 func main() {
 	fmt.Println("web request")

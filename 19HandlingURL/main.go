@@ -23,7 +23,7 @@ func main() {
 	fmt.Println(result.RawQuery)
 
 	qparams := result.Query()
-	fmt.Printf("The type of quesy params are : %T\n", qparams)
+	fmt.Printf("The type of query params are : %T\n", qparams)
 
 	fmt.Println(qparams["coursename"])
 
