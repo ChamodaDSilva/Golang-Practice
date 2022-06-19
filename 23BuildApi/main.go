@@ -48,7 +48,7 @@ func main() {
 	r.HandleFunc("/courses", getAllCourses).Methods("GET")// http://localhost:4000/courses
 	r.HandleFunc("/course/{id}", getOneCourse).Methods("GET") // http://localhost:4000/course/3
 	r.HandleFunc("/course", createOneCourse).Methods("POST")
-	r.HandleFunc("/course/{id}", upddateOneCourse).Methods("PUT")
+	r.HandleFunc("/course/{id}", updateOneCourse).Methods("PUT")
 	r.HandleFunc("/course/{id}", deleteOneCourse).Methods("DELETE")
 
 	//listern to a port
@@ -130,7 +130,7 @@ func createOneCourse(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func upddateOneCourse(w http.ResponseWriter, r *http.Request) {
+func updateOneCourse(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("update one course")
 	w.Header().Set("Content-Type", "application/json")
 
